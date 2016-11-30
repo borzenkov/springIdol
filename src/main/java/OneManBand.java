@@ -21,5 +21,5 @@ public class OneManBand implements Performer{
     public void setInstruments(Map<String, Instrument> instruments) {
         this.instruments = instruments;
     }
-    //
+    
 }
