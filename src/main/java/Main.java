@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws PerformanceException {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-idol.xml");
 
-        Performer performer = (Performer) ctx.getBean("kenny");
+        Performer performer = (Performer) ctx.getBean("hank");
         performer.perform();
     }
 }

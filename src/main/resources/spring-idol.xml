@@ -31,4 +31,13 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <bean id="saxophone" class="Saxophone"/>
 
     <bean id="piano" class="Piano"/>
+
+    <bean id="hank" class="OneManBand">
+        <property name="instruments">
+            <list>
+                <ref bean="piano"/>
+                <ref bean="saxophone"/>
+            </list>
+        </property>
+    </bean>
 </beans>
