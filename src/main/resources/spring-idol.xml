@@ -34,10 +34,14 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="hank" class="OneManBand">
         <property name="instruments">
-            <list>
-                <ref bean="piano"/>
-                <ref bean="saxophone"/>
-            </list>
+            <map>
+                <entry key="PIANO"  value-ref="piano"/>
+                <entry key="SAXOPHONE"  value-ref="saxophone"/>
+            </map>
         </property>
+    </bean>
+
+    <bean id="carl" class="Instrumentalist">
+        <property name="song" value="#{kenny.song}"/>
     </bean>
 </beans>
